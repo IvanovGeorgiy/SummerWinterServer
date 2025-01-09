@@ -5,9 +5,8 @@ const sequelize = require('../db');
 const sawClients = sequelize.define('summerandwinterclients', {
     id: {
         primaryKey: true,
-        autoincrement: true,
-        allowNull: false,
-        type: DataTypes.INTEGER
+        autoIncrement: true,
+        type: DataTypes.INTEGER,
     },
     name: {
         type: DataTypes.STRING,

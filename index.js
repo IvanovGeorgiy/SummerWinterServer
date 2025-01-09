@@ -9,11 +9,6 @@ const router = require('./routes/index')
 app.use(cors());
 app.use(express.json());
 app.use('/api', router);
-app.listen(3000);
-app.post('/', (req, res) => {
-    res.status(200).json({message: "WORKING!"})
-})
-
 const start = async () => {
     try{
         await sequelize.authenticate();
